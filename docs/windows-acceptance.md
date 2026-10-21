@@ -83,3 +83,7 @@ node scripts/devtools-acceptance.mjs
 - Windows 验收已执行，macOS 无环境，标记待验证。
 
 审计明细：[dependency-audit.json](../.artifacts/dependency-audit.json)。
+
+## npm 正式发布验证
+
+`0.1.0` 已发布至 npm 官方 registry，全新全局安装与 npx 安装器均验证通过，实际安装的 shrinkwrap 补丁版本正确。发布 tag、归档校验值及六项真实 registry 检查见 [npm 发布验收](npm-release.md)。

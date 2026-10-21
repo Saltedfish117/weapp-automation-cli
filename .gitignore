@@ -1,0 +1,15 @@
+node_modules/
+.artifacts/
+coverage/
+*.tgz
+shots/
+test-evidence/
+.weapp.json
+.weapp-evidence/
+*.log
+.env
+.env.*
+!.env.example
+.npmrc
+*.pem
+*.key

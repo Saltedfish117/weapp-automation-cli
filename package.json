@@ -1,0 +1,31 @@
+{
+  "name": "weapp-automation-cli",
+  "version": "0.1.0",
+  "description": "WeChat DevTools automation CLI with managed skills for Codex, DeepSeek Harness, VS Code Copilot and Claude Code.",
+  "license": "MIT",
+  "repository": { "type": "git", "url": "git+https://github.com/Saltedfish117/weapp-automation-cli.git" },
+  "homepage": "https://github.com/Saltedfish117/weapp-automation-cli#readme",
+  "bugs": { "url": "https://github.com/Saltedfish117/weapp-automation-cli/issues" },
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "bin": { "weapp": "bin/weapp.mjs" },
+  "files": ["bin/", "src/", "skills/", "examples/", "npm-shrinkwrap.json", "README.md", "LICENSE", "THIRD_PARTY_NOTICES.md"],
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "doctor": "node bin/weapp.mjs doctor",
+    "check-package": "node scripts/check-package.mjs"
+  },
+  "keywords": ["wechat", "miniprogram", "automation", "agent-skills", "cli"],
+  "dependencies": {
+    "@clack/prompts": "1.8.1",
+    "miniprogram-automator": "0.13.0",
+    "pixelmatch": "5.3.0",
+    "pngjs": "7.0.0"
+  },
+  "overrides": {
+    "minimist": "0.2.4",
+    "jpeg-js": "0.4.4",
+    "debug": "4.3.4"
+  },
+  "publishConfig": { "access": "public", "registry": "https://registry.npmjs.org/" }
+}
